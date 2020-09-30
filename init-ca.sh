@@ -98,7 +98,7 @@ emailAddress_default            =
 
 [ v3_ca ]
 subjectKeyIdentifier = hash
-authorityKeyIdentifier = keyid:always,issuer
+authorityKeyIdentifier = keyid:always,issuer:always
 basicConstraints = critical, CA:true
 keyUsage = critical, digitalSignature, cRLSign, keyCertSign
 
@@ -116,12 +116,12 @@ basicConstraints = CA:FALSE
 nsCertType = server
 nsComment = "OpenSSL Generated Server Certificate"
 subjectKeyIdentifier = hash
-authorityKeyIdentifier = keyid,issuer:always
+authorityKeyIdentifier = keyid:always,issuer:always
 keyUsage = critical, digitalSignature, keyEncipherment
 extendedKeyUsage = serverAuth
 
 [ crl_ext ]
-authorityKeyIdentifier=keyid:always
+authorityKeyIdentifier=keyid:always,issuer:always
 
 [ ocsp ]
 basicConstraints = CA:FALSE
