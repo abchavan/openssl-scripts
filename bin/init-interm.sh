@@ -143,7 +143,7 @@ cd ..
 V3_INTERM_CA="
 [ v3_intermediate_ca ]
 subjectKeyIdentifier = hash
-authorityKeyIdentifier = keyid:always,issuer
+authorityKeyIdentifier = keyid:always,issuer:always
 basicConstraints = critical, CA:true, pathlen:$PATHLEN
 keyUsage = critical, digitalSignature, cRLSign, keyCertSign
 "	
