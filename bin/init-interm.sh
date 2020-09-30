@@ -106,7 +106,7 @@ emailAddress_default            =
 
 [ v3_ca ]
 subjectKeyIdentifier = hash
-authorityKeyIdentifier = keyid:always,issuer
+authorityKeyIdentifier=keyid:always,issuer:always
 basicConstraints = critical, CA:true
 keyUsage = critical, digitalSignature, cRLSign, keyCertSign
 
@@ -120,7 +120,7 @@ keyUsage = critical, nonRepudiation, digitalSignature, keyEncipherment
 extendedKeyUsage = clientAuth, emailProtection
 
 [ crl_ext ]
-authorityKeyIdentifier=keyid:always
+authorityKeyIdentifier=keyid:always,issuer:always
 
 [ ocsp ]
 basicConstraints = CA:FALSE
